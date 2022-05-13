@@ -9,6 +9,8 @@ const getStudent = () => {
   }
 };
 
+//Infinite scroll logic
+
 container.addEventListener("scroll", () => {
   const { scrollHeight, scrollTop, clientHeight } = container;
   if (scrollHeight <= Math.ceil(scrollTop + clientHeight)) {
